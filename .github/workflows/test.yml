@@ -10,7 +10,9 @@ on:
 jobs:
   DevDeploy:
     runs-on: ubuntu-20.04
-    run: "pip install boto3==1.20.22 openpyxl==3.0.10 ghapi==1.0.0 jmespath==0.10.0 loguru==0.6.0 "     
+    steps:
+      - name: "test"
+        run: "pip install boto3==1.20.22 openpyxl==3.0.10 ghapi==1.0.0 jmespath==0.10.0 loguru==0.6.0 "     
 permissions:
   id-token: write
   contents: read
